@@ -5,20 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Be the Penguins
+        of Winter</title>
     <!-- tailwind css -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/b3e1098af3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1 class="text-7xl font-bold"><span>be the penguins</span> <br><span>of winter</span></h1>
+    <nav class="bg-yellow-50">
+        <div class="flex justify-between px-24 pt-8 pb-16">
+            <div class="logo w-60 flex items-center justify-center">
+                <a href="#">
+                    <img src="./icons/Group 33072.png" alt="">
+                </a>
+            </div>
+            <div class="relative flex items-center justify-end navText">
+                <a href="#home" class="px-1 mx-10 rounded">Home</a>
+                <a href="#product" class="px-1 mx-10 rounded">Product</a>
+                <a href="#about" class="px-1 mx-10 rounded">About us</a>
+                <a href="#contact" class="px-1 mx-10 rounded">Contact us</a>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-yellow-50">
+        <section class="homeSection container flex items-center justify-around pb-5" id="home">
+            <div class="heroTitle">
+                <h1 class="text-7xl font-bold bebasFont">
+                    <span class="darkyellowTitle">
+                        be the penguins
+                    </span>
+                    <br>
+                    <span class="nevyTitle">
+                        of winter
+                    </span>
+                </h1>
+                <p class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsam vel sint
+                    reprehenderit.</p>
+                <a class="px-7 py-4 buyButton text-white" href="https://google.com">
+                    <button class="uppercase">
+                        <!-- <i class="fas fa-shopping-cart"></i> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                        </svg>
+                        buy now</button>
+                </a>
+            </div>
+            <div class="heroImage">
+                <img src="./images/model.png" alt="">
+            </div>
+        </section>
+    </header>
 
+
+
+
+
+
+    <!-- custom script -->
+    <script src="./script.js"></script>
 </body>
 
 </html>

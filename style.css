@@ -1,0 +1,59 @@
+/* universal */
+.bebasFont {
+    font-family: 'Bebas Neue',
+        cursive;
+}
+
+.robotoFont {
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+.buyButton {
+    background: linear-gradient(180deg, #A4BC46 0%, #85A019 100%);
+    border-radius: 10px;
+}
+
+/* end */
+
+
+/* navbar */
+.navText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3C3C3C;
+}
+
+/* sections home
+
+*/
+/* .homeSection {
+    background: #fffaeb;
+} */
+
+.darkyellowTitle {
+    color: #FABE4C;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.nevyTitle {
+    color: #363959;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+
+/* product section
+
+ */
+#productSection {
+    background: #E5E5E5;
+}
