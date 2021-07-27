@@ -22,23 +22,29 @@
 </head>
 
 <body>
-    <nav class="bg-yellow-50">
-        <div class="flex justify-between px-24 pt-8 pb-16">
-            <div class="logo w-60 flex items-center justify-center">
+    <nav class="bg-yellow-50 md:flex lg:flex xl:flex topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon mr-1 mt-1" onclick="myFunction()">
+            <i class="fas fa-bars"></i>
+        </a>
+        <div class="lg:px-24 lg:pt-8 lg:pb-16">
+            <div class="logo lg:w-60 md:w-30 flex items-center justify-center">
                 <a href="#">
-                    <img src="./icons/Group 33072.png" alt="">
+                <img class="w-60 hidden lg:block md:block xl:block" src="./icons/Group 33072.png" alt="">
+
                 </a>
             </div>
-            <div class="relative flex items-center justify-end navText">
-                <a href="#home" class="px-1 mx-10 rounded">Home</a>
-                <a href="#product" class="px-1 mx-10 rounded">Product</a>
-                <a href="#about" class="px-1 mx-10 rounded">About us</a>
-                <a href="#contact" class="px-1 mx-10 rounded">Contact us</a>
+            <div class="navText">
+                <img class="w-60 lg:hidden xl:hidden md:hidden pt-3" src="./icons/Group 33072.png" alt="">
+                <a href="#home" class="px-1 md:mx-5 lg:mx-10 rounded">Home</a>
+                <a href="#product" class="px-1 md:mx-5 lg:mx-10 rounded">Product</a>
+                <a href="#about" class="px-1 md:mx-5 lg:mx-10 rounded">About us</a>
+                <a href="#contact" class="px-1 md:mx-5 lg:mx-10 rounded">Contact us</a>
             </div>
+            
         </div>
     </nav>
-    <header class="bg-yellow-50">
-        <section class="homeSection container flex items-center justify-around pb-5" id="home">
+    <header class="md:pl-2 sm:pl-2 bg-yellow-50 ">
+        <section class="homeSection lg:container lg:flex lg:items-center lg:justify-around pb-5" id="home">
             <div class="heroTitle">
                 <h1 class="text-7xl font-bold bebasFont">
                     <span class="darkyellowTitle">
@@ -49,12 +55,13 @@
                         of winter
                     </span>
                 </h1>
-                <p class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsam vel sint
+                <p class="my-5 montFont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsam vel sint
                     reprehenderit.</p>
                 <a class="px-7 py-4 buyButton text-white" href="https://google.com">
                     <button class="uppercase">
                         <!-- <i class="fas fa-shopping-cart"></i> -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20"
+                            fill="currentColor">
                             <path
                                 d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
                         </svg>
