@@ -23,30 +23,41 @@
 </head>
 
 <body>
-    <header class="pl-3 bg-yellow-50 ">
-        <nav class="bg-yellow-50 items-center topnav" id="myTopnav">
-            <a href="javascript:void(0);" class="icon mr-1 mt-1" onclick="myFunction()">
-                <i class="fas fa-bars"></i>
-            </a>
-            <div class="lg:px-24 lg:pt-8 lg:pb-16 md:text-center lg:flex lg:justify-between px-24 pt-8 pb-16">
-                <div class="logo lg:w-60 md:w-30 flex items-center justify-center">
-                    <a href="#">
-                        <img class="w-60 hidden lg:block md:block xl:block" src="./icons/Group 33072.png" alt="">
+    <header>
 
-                    </a>
-                </div>
-                <div class="navText">
-                    <img class="w-60 lg:hidden xl:hidden md:hidden pt-3" src="./icons/Group 33072.png" alt="">
-                    <a href="#home" class="px-1 md:mx-5 lg:mx-10 rounded">Home</a>
-                    <a href="#product" class="px-1 md:mx-5 lg:mx-10 rounded">Product</a>
-                    <a href="#about" class="px-1 md:mx-5 lg:mx-10 rounded">About us</a>
-                    <a href="#contact" id="contactNav" class="px-1 md:mx-5 lg:mx-10 rounded">Contact us</a>
-                </div>
+    </header>
+    <nav class="bg-yellow-50 md:flex lg:flex xl:flex topnav" id="myTopnav">
+        <div class="flex justify-between px-24 pt-8 pb-16">
+            <div class="logo w-60 flex items-center justify-center">
+                <a href="javascript:void(0);" class="icon mr-1 mt-1" onclick="myFunction()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <div class="lg:px-24 lg:pt-8 lg:pb-16">
+                    <div class="logo lg:w-60 md:w-30 flex items-center justify-center">
+                        <a href="#">
+                            <img src="./icons/Group 33072.png" alt="">
+                            <img class="w-60 hidden lg:block md:block xl:block" src="./icons/Group 33072.png" alt="">
 
-            </div>
-        </nav>
+                        </a>
+                    </div>
+                    <div class="relative flex items-center justify-end navText">
+                        <a href="#home" class="px-1 mx-10 rounded">Home</a>
+                        <a href="#product" class="px-1 mx-10 rounded">Product</a>
+                        <a href="#about" class="px-1 mx-10 rounded">About us</a>
+                        <a href="#contact" class="px-1 mx-10 rounded">Contact us</a>
+                        <div class="navText">
+                            <img class="w-60 lg:hidden xl:hidden md:hidden pt-3" src="./icons/Group 33072.png" alt="">
+                            <a href="#home" class="px-1 md:mx-5 lg:mx-10 rounded">Home</a>
+                            <a href="#product" class="px-1 md:mx-5 lg:mx-10 rounded">Product</a>
+                            <a href="#about" class="px-1 md:mx-5 lg:mx-10 rounded">About us</a>
+                            <a href="#contact" class="px-1 md:mx-5 lg:mx-10 rounded">Contact us</a>
+                        </div>
 
-        <section class="homeSection lg:container lg:flex lg:items-center lg:justify-around pb-5" id="home">
+                    </div>
+    </nav>
+    <header>
+
+        <section class="homeSection lg:px-24 lg:container lg:flex lg:items-center lg:justify-around pb-5" id="home">
             <div class="heroTitle">
                 <h1 class="text-7xl font-bold bebasFont">
                     <span class="darkyellowTitle">
@@ -57,7 +68,9 @@
                         of winter
                     </span>
                 </h1>
-                <p class="my-5 montFont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsam vel sint
+                <p class="my-5 montFont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsam
+                    vel
+                    sint
                     reprehenderit.</p>
                 <a class="px-7 py-4 buyButton text-white" href="https://google.com">
                     <button class="uppercase">
@@ -74,7 +87,9 @@
                 <img src="./images/model.png" alt="">
             </div>
         </section>
-        <div class="container hidden mx-auto modal" id="contactForm">
+
+
+        <div class="container hidden mx-auto modal" id="contactNav">
             <!-- This example requires Tailwind CSS v2.0+ -->
             <div class="fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog"
                 aria-modal="true">
@@ -118,30 +133,24 @@
                                     </h3>
                                     <div class="mt-2">
                                         <form action="" class="grid">
-                                            <input required type="text" name="name" id="name" placeholder="Enter Your Name"
+                                            <input type="text" name="name" id="name" placeholder="Enter Your Name"
                                                 class="border mt-2 rounded focus py-1 pr-9 pl-1">
-                                            <input required type="email" name="email" id="email" placeholder="Enter Your Email"
+                                            <input type="email" name="email" id="email" placeholder="Enter Your Email"
                                                 class="border mt-2 rounded focus py-1 pr-9 pl-1">
-                                            <input required type="text" name="message" id="message"
+                                            <input type="text" name="message" id="message"
                                                 placeholder="Enter Your Message"
                                                 class="border mt-2 rounded pb-20 pr-9 pl-1">
 
                                             <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                                                <button type="" placeholder=""
-                                                    class="w-full inline-flex justify-center rounded-md border
-                                                    border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base
-                                                    font-medium text-white hover:bg-blue-700 focus:outline-none
-                                                    focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-3
-                                                    sm:w-auto sm:text-sm">Send Message
-                                                    </button>
-                                                
-                                                <button placeholder=" Cancel"
+                                                <button type="button"
+                                                    class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
+                                                    Deactivate
+                                                </button>
+                                                <button type="button"
                                                     class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
-                                                    id="cancel">Cancel
-                                                    </button>
-                                                   
-                                                
-                                                
+                                                    id="cancel">
+                                                    Cancel
+                                                </button>
                                             </div>
                                         </form>
                                     </div>
@@ -161,7 +170,10 @@
 
 
 
-    <!-- custom script -->
+
+
+
+
     <script src="./script.js"></script>
 </body>
 
