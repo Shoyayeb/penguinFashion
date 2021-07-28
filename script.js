@@ -14,10 +14,10 @@ function closeFunction() {
     document.getElementById("contactForm").style.display = "none";
 }
 
-
 function openFunction() {
     document.getElementById("contactForm").style.display = "block";
 }
-setTimeout(function () {
-    document.getElementById("contactForm").style.display = "block";
-}, 5000);
+
+// setTimeout(function () {
+//     document.getElementById("contactForm").style.display = "block";
+// }, 5000);
