@@ -6,18 +6,26 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+document.getElementById("close").addEventListener("click", cancelFunction);
 document.getElementById("cancel").addEventListener("click", closeFunction);
 document.getElementById("contactNav").addEventListener("click", openFunction);
+document.getElementById("signUpOpen").addEventListener("click", signFunction);
 
 
-function closeFunction() {
+function cancelFunction() {
     document.getElementById("contactForm").style.display = "none";
+}
+function closeFunction() {
+    document.getElementById("signUpForm").style.display = "none";
 }
 
 function openFunction() {
     document.getElementById("contactForm").style.display = "block";
 }
+function signFunction() {
+    document.getElementById("signUpForm").style.display = "block";
+}
 
 // setTimeout(function () {
-//     document.getElementById("contactForm").style.display = "block";
-// }, 5000);
+//     document.getElementById("signUpForm").style.display = "block";
+// }, 10);

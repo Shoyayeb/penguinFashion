@@ -129,7 +129,6 @@
     font-size: 24px;
     line-height: 28px;
     color: #363958;
-    
 }
 .jacketDetail {
     font-family: Roboto;
@@ -160,4 +159,9 @@
 #aboutImage {
     width: fit-content;
     height: fit-content;
+}
+.aboutCard {
+    width: 500px;
+    display: flex;
+    align-items: center;
 }
