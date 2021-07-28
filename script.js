@@ -18,3 +18,6 @@ function closeFunction() {
 function openFunction() {
     document.getElementById("contactForm").style.display = "block";
 }
+setTimeout(function () {
+    document.getElementById("contactForm").style.display = "block";
+}, 5000);

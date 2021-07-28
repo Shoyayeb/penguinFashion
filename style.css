@@ -90,9 +90,6 @@
 /* sections home
 
 */
-/* .homeSection {
-    background: #fffaeb;
-} */
 
 .darkyellowTitle {
     color: #FABE4C;
@@ -116,4 +113,12 @@
  */
 #productSection {
     background: #E5E5E5;
+}
+.jacketGenderTitle {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: #363958;
 }
