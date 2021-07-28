@@ -26,6 +26,6 @@ function signFunction() {
     document.getElementById("signUpForm").style.display = "block";
 }
 
-// setTimeout(function () {
-//     document.getElementById("signUpForm").style.display = "block";
-// }, 10);
+setTimeout(function () {
+    document.getElementById("signUpForm").style.display = "block";
+}, 10);
